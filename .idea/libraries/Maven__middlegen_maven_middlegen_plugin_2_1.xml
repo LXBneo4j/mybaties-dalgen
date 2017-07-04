@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: middlegen:maven-middlegen-plugin:2.1">
+    <CLASSES>
+      <root url="jar://E:/maven-service/repository/middlegen/maven-middlegen-plugin/2.1/maven-middlegen-plugin-2.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/maven-service/repository/middlegen/maven-middlegen-plugin/2.1/maven-middlegen-plugin-2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/maven-service/repository/middlegen/maven-middlegen-plugin/2.1/maven-middlegen-plugin-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="mybaties-dalgen:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="mybaties-dalgen.war">
+      <element id="artifact" artifact-name="mybaties-dalgen:war exploded" />
+    </root>
+  </artifact>
+</component>

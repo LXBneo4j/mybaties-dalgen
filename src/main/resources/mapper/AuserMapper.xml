@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.NalHealth.mapper.AuserMapper">
+  <resultMap id="BaseResultMap" type="com.NalHealth.entity.Auser">
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="upwd" jdbcType="VARCHAR" property="upwd" />
+    <result column="limits" jdbcType="INTEGER" property="limits" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from auser
+    where uid = #{uid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="uid" keyProperty="uid" parameterType="com.NalHealth.entity.Auser" useGeneratedKeys="true">
+    insert into auser (username, upwd, limits, 
+      state)
+    values (#{username,jdbcType=VARCHAR}, #{upwd,jdbcType=VARCHAR}, #{limits,jdbcType=INTEGER}, 
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.NalHealth.entity.Auser">
+    update auser
+    set username = #{username,jdbcType=VARCHAR},
+      upwd = #{upwd,jdbcType=VARCHAR},
+      limits = #{limits,jdbcType=INTEGER},
+      state = #{state,jdbcType=INTEGER}
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select uid, username, upwd, limits, state
+    from auser
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select uid, username, upwd, limits, state
+    from auser
+  </select>
+  <resultMap id="BaseResultMap" type="com.NalHealth.entity.Auser">
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="upwd" jdbcType="VARCHAR" property="upwd" />
+    <result column="limits" jdbcType="INTEGER" property="limits" />
+    <result column="state" jdbcType="INTEGER" property="state" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from auser
+    where uid = #{uid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="uid" keyProperty="uid" parameterType="com.NalHealth.entity.Auser" useGeneratedKeys="true">
+    insert into auser (username, upwd, limits, 
+      state)
+    values (#{username,jdbcType=VARCHAR}, #{upwd,jdbcType=VARCHAR}, #{limits,jdbcType=INTEGER}, 
+      #{state,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.NalHealth.entity.Auser">
+    update auser
+    set username = #{username,jdbcType=VARCHAR},
+      upwd = #{upwd,jdbcType=VARCHAR},
+      limits = #{limits,jdbcType=INTEGER},
+      state = #{state,jdbcType=INTEGER}
+    where uid = #{uid,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select uid, username, upwd, limits, state
+    from auser
+    where uid = #{uid,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select uid, username, upwd, limits, state
+    from auser
+  </select>
+</mapper>
